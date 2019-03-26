@@ -1,0 +1,39 @@
+{
+  "name": "ltc_anywhere",
+  "version": "1.0.0",
+  "description": "Node.js static server",
+  "main": "src/app.js",
+  "bin": {
+    "ltc_anywhere": "bin/ltc_anywhere"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix"
+  },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flameltc/ltc-anywhere.git"
+  },
+  "author": "l",
+  "email": "577189479@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flameltc/ltc-anywhere/issues"
+  },
+  "homepage": "https://github.com/flameltc/ltc-anywhere#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.1.1",
+    "yargs": "^13.2.2"
+  }
+}
